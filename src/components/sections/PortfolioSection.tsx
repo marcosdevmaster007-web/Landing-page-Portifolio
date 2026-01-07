@@ -1,32 +1,40 @@
 import { ExternalLink, Github, Star, GitFork, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useGitHubRepos } from "@/hooks/useGitHubRepos";
+import imgcorretora from "../../assets/c.png"
+import imgpsicologa from "../../assets/p.png"
+import imgpizza from "../../assets/pi.png"
+
+
 
 // Projetos destacados manuais
 const featuredProjects = [
   {
     title: "Portfolio Web Master",
-    description: "Landing page moderna com design responsivo e animações suaves.",
+    description: "Landing page moderna com design responsivo e animações suaves para corretora de imóveis.",
     tags: ["React", "TypeScript", "Tailwind CSS"],
-    image: null,
-    liveUrl: "#",
-    githubUrl: "https://github.com/marcosdevmaster007-web",
+    image: imgcorretora,
+    liveUrl: "https://corretora-imoveis.netlify.app/",
+    githubUrl: "https://corretora-imoveis.netlify.app/",
   },
-  {
-    title: "Projeto E-commerce",
-    description: "Loja virtual completa com carrinho, pagamentos e painel admin.",
-    tags: ["Next.js", "Node.js", "MongoDB"],
-    image: null,
-    liveUrl: "#",
-    githubUrl: "https://github.com/marcosdevmaster007-web",
+
+    {
+    title: "Portfolio Web Master",
+    description: "Landing page moderna com design responsivo e animações suaves para Psicóloga.",
+    tags: ["React", "TypeScript", "Tailwind CSS"],
+    image: imgpsicologa,
+    liveUrl: "https://psicologa-ana.netlify.app/",
+    githubUrl: "https://psicologa-ana.netlify.app/",
   },
+
+
   {
     title: "App Mobile",
-    description: "Aplicativo mobile multiplataforma para gestão de tarefas.",
+    description: "Aplicativo mobile delivery para pizzaria.",
     tags: ["React Native", "Firebase", "Redux"],
-    image: null,
-    liveUrl: "#",
-    githubUrl: "https://github.com/marcosdevmaster007-web",
+    image: imgpizza,
+    liveUrl: "https://pizzaria-app.netlify.app/",
+    githubUrl: "https://pizzaria-app.netlify.app/",
   },
 ];
 
@@ -62,14 +70,25 @@ const PortfolioSection = () => {
                 key={project.title}
                 className="group rounded-xl bg-card border border-border overflow-hidden hover:border-primary/50 transition-all duration-300 hover:-translate-y-1"
               >
-                {/* Image Placeholder */}
-                <div className="h-48 bg-muted flex items-center justify-center">
-                  <div className="w-16 h-16 rounded-full bg-gradient-primary flex items-center justify-center">
-                    <span className="font-display text-2xl font-bold text-primary-foreground">
-                      {project.title.charAt(0)}
-                    </span>
-                  </div>
+                {/* Image */}
+                <div className="h-48 overflow-hidden">
+                  {project.image ? (
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <div className="h-full bg-muted flex items-center justify-center">
+                      <div className="w-16 h-16 rounded-full bg-gradient-primary flex items-center justify-center">
+                        <span className="font-display text-2xl font-bold text-primary-foreground">
+                          {project.title.charAt(0)}
+                        </span>
+                      </div>
+                    </div>
+                  )}
                 </div>
+
                 
                 {/* Content */}
                 <div className="p-6">
