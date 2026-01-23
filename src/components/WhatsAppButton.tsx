@@ -16,10 +16,10 @@ const WhatsAppButton = ({
       href={whatsappUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 rounded-full bg-[#25D366] text-white shadow-lg hover:scale-110 transition-transform animate-pulse-glow"
+      className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 rounded-full  text-white shadow-lg hover:scale-110 transition-transform animate-pulse-glow"
       aria-label="Contato via WhatsApp"
     >
-      <MessageCircle className="h-7 w-7 fill-current" />
+      <img width="60" height="60" src="https://img.icons8.com/color/60/whatsapp--v1.png" alt="whatsapp--v1" />
     </a>
   );
 };

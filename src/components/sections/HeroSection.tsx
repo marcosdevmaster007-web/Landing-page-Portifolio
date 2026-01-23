@@ -1,6 +1,6 @@
 import { ArrowDown, Github, Code2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/Eu-master.png";
 
 const HeroSection = () => {
   return (

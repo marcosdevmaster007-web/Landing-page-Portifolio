@@ -27,7 +27,6 @@ const featuredProjects = [
     githubUrl: "https://psicologa-ana.netlify.app/",
   },
 
-
   {
     title: "App Mobile",
     description: "Aplicativo mobile delivery para pizzaria.",

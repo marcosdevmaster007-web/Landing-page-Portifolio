@@ -98,7 +98,7 @@ const Footer = () => {
             © {currentYear} Web Master Desenvolvimento Digital. Todos os direitos reservados.
           </p>
           <p className="text-muted-foreground text-sm flex items-center gap-1">
-            Feito com <Heart className="h-4 w-4 text-destructive fill-destructive" /> por Web Master
+            
           </p>
         </div>
       </div>
