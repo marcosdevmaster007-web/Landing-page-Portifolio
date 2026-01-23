@@ -32,7 +32,7 @@ const AboutSection = () => {
             {/* Text */}
             <div className="space-y-6">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Sou um desenvolvedor apaixonado por criar experiências digitais 
+                Muito prazer, me chamo Marcos! um desenvolvedor apaixonado por criar experiências digitais 
                 incríveis. Com foco em desenvolvimento web e mobile, transformo 
                 ideias complexas em soluções elegantes e funcionais.
               </p>
