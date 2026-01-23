@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { useGitHubRepos } from "@/hooks/useGitHubRepos";
 import imgcorretora from "../../assets/c.png"
 import imgpsicologa from "../../assets/p.png"
+import imgadvogado from "../../assets/ad.png"
 import imgpizza from "../../assets/pi.png"
 
 
@@ -25,6 +26,15 @@ const featuredProjects = [
     image: imgpsicologa,
     liveUrl: "https://psicologa-ana.netlify.app/",
     githubUrl: "https://psicologa-ana.netlify.app/",
+  },
+
+      {
+    title: "Portfolio Web Master",
+    description: "Landing page moderna com design responsivo e animações suaves para Advogado.",
+    tags: ["React", "TypeScript", "Tailwind CSS"],
+    image: imgadvogado,
+    liveUrl: "https://ricardo-silva-advocacia.netlify.app/",
+    githubUrl: "https://ricardo-silva-advocacia.netlify.app/",
   },
 
   {
