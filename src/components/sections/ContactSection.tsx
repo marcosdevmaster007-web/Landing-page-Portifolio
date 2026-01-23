@@ -55,7 +55,7 @@ const ContactSection = () => {
     {
       icon: MapPin,
       label: "Localização",
-      value: "Brasil",
+      value: "Serra, ES",
       href: null,
     },
   ];
@@ -121,7 +121,7 @@ const ContactSection = () => {
 
           {/* Contact Form */}
           <form onSubmit={handleSubmit} className="space-y-6">
-            <div>
+            {/* <div>
               <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
                 Nome
               </label>
@@ -182,7 +182,7 @@ const ContactSection = () => {
                   Enviar Mensagem
                 </>
               )}
-            </Button>
+            </Button> */}
           </form>
         </div>
       </div>
