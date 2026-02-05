@@ -6,7 +6,7 @@ interface WhatsAppButtonProps {
 }
 
 const WhatsAppButton = ({ 
-  phoneNumber = "5500000000000", 
+  phoneNumber = "5527999192430", 
   message = "Olá! Gostaria de saber mais sobre seus serviços." 
 }: WhatsAppButtonProps) => {
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
